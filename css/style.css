@@ -20,8 +20,6 @@ html, body {font-family: 'Luckiest Guy', 'Noto Sans KR', sans-serif !important;}
 }
 
 .nav {
-    display: block;
-    position: fixed;
     padding: 0;
     left: 0;
     top: 0;
@@ -47,14 +45,15 @@ html, body {font-family: 'Luckiest Guy', 'Noto Sans KR', sans-serif !important;}
 
 img {
     max-width: 100%;
-    z-index: 9;
+    z-index: inherit;
 }
+
 
 
 /* 메인 */
 
 .main-title {
-    margin-top: 120px;
+    margin-top: 140px;
     position: absolute;
     top: 0px;
     left: 20px;
@@ -62,8 +61,8 @@ img {
 }
 
 .main-title span {
-    font-size: 90pt;
-    -webkit-text-fill-color: #FFE145;
+    font-size: 110pt;
+    -webkit-text-fill-color: #FFE600;
     -webkit-text-stroke: 3px #000000;
     line-height: 0.8;
 }
@@ -89,39 +88,49 @@ img {
     z-index:1
 }
 
-.group-1 {
+.viewer-item {
     position: relative;
     top: 300px;
     left: 20px;
     float: left;
     margin-right: 7vw;
-    width: 280px;
 }
 
-.viewer-item {
-    display: block;
-    width: 100%;
+.yellowbox {
+    width: 280px;
     color: #000;
     text-decoration: none;
     overflow: visible;
     background-color: white;
-    border: solid 10px #FFE145;
+    border: solid 8px #FFE600;
     margin-bottom: 10px;
-    z-index: 10;
+    position: absolute;
 }
 
+#Pizza-Planet {
+    left: 30px;
+}
+
+#Teriyaki {
+    top: 400px;
+}
+
+#Slusho {
+    left: 10px;
+}
 
 .title span{
     font-size: 16px;
     font-family: 'Courier Prime';
     margin-bottom: 10px;
-    background-color: #FFE145;
+    background-color: #FFE600;
     padding: 0 3px;
     font-weight: bold;
 }
 
 .info-btn {
     cursor: pointer;
+    position: relative;
 }
 
 .info-btn span{
