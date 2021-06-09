@@ -32,11 +32,11 @@ html, body {font-family: 'Luckiest Guy', 'Noto Sans KR', sans-serif !important; 
     overflow: hidden;
     position: relative;
     padding: 7vw 7vw;
-    margin-bottom: .8vw;
 }
 
 img {
     max-width: 100%;
+    height: auto;
     z-index: inherit;
 }
 
@@ -76,8 +76,8 @@ img {
 .viewer-inner {
     position: relative;
     z-index: 1;
-    width: 1440px;
-    height: 2880px;
+    width: 2400px;
+    height: 2400px;
     overflow: hidden;
 }
 
@@ -127,15 +127,28 @@ section {
 .box  {
     position: relative;
     z-index: 25;
-    margin-bottom: 10px;
     text-decoration: none;
-    background: #fff;
     color: #000;
 }
 
 .yellowbox {
     width: 160px;
-    border: solid 8px #FFE600;
+    border: solid #FFE600;
+    border-top-width: 8px;
+    border-bottom-width: 3px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    background: #FFE600;
+}
+
+.yellowbox-big {
+    width: 300px;
+    border: solid #FFE600;
+    border-top-width: 8px;
+    border-bottom-width: 3px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    background: #FFE600;
 }
 
 .title {
@@ -146,11 +159,9 @@ section {
 }
 
 .title span {
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Courier Prime';
-    margin-bottom: 10px;
-    padding: 0 3px;
-    font-weight: bold;
+    padding: 0 3px 0 3px;
 }
 
 .title-yellowbox span{
@@ -159,27 +170,27 @@ section {
 
 #Pizza-Planet {
     left: 100px;
-    top: 550px;
+    top: 350px;
 }
 
 #Teriyaki {
-    left: 250px;
-    top: 950px;
+    left: 350px;
+    top: 900px;
 }
 
 #Kahuna {
     left: 300px;
-    top: 700px;
+    top: 600px;
 }
 
 #Slusho {
-    left: 500px;
-    top: 800px;
+    left: 600px;
+    top: 300px;
 }
 
 #BigJerry {
-    left: 20px;
-    top: 850px;
+    left: 40px;
+    top: 650px;
 }
 
 #LosPollos {
@@ -188,13 +199,13 @@ section {
 }
 
 #Clone {
-    left: 300px;
-    top: 1350px;
+    left: 800px;
+    top: 500px;
 }
 
 #Clucks {
-    left: 500px;
-    top: 1150px;
+    left: 600px;
+    top: 850px;
 }
 
 .info-btn {
@@ -215,17 +226,61 @@ section {
 
 .bluebox {
     width: 160px;
-    border: solid 8px #55AFFF;
+    border: solid #55AFFF;
+    border-top-width: 8px;
+    border-bottom-width: 3px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    background: #55AFFF;
+}
+
+.bluebox-big {
+    width: 300px;
+    border: solid #55AFFF;
+    border-top-width: 8px;
+    border-bottom-width: 3px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    background: #55AFFF;
 }
 
 .title-bluebox span{
     background-color: #55AFFF;
 }
 
+#AirO {
+    left: 50px;
+    top: 100px;
+}
+
 #Duff {
-    position: absolute;
-    left: 700px;
-    top: 500px;
+    left: 800px;
+    top: 300px;
+}
+
+#Encom {
+    left: 400px;
+    top: 50px;
+}
+
+#BnL {
+    left: 300px;
+    top: 300px;
+}
+
+#Oceanic {
+    left: 80px;
+    top: 300px;
+}
+
+#Maroon {
+    left: 150px;
+    top: 600px;
+}
+
+#Specta {
+    left: 300px;
+    top: 800px;
 }
 
 .greenbox {
