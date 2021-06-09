@@ -10,6 +10,11 @@
 
 html, body {font-family: 'Luckiest Guy', 'Noto Sans KR', sans-serif !important;}
 
+.wrap {
+    width: 1440px;
+    height: 3000px;
+}
+
 .header {
     position: fixed;
     z-index: 100;
@@ -76,15 +81,11 @@ img {
 
 .viewer {
     background: #55AFFF;
-    width: 380rem;
-    height: 213.33rem;
     position: relative;
     top: 0;
     left: 0;
     overflow: hidden;
-    padding-right: 35rem;
     user-select: none;
-    cursor: all-scroll;
     z-index:1
 }
 
@@ -107,13 +108,9 @@ img {
     position: absolute;
 }
 
-#Pizza-Planet {
-    left: 30px;
-}
-
 #Teriyaki {
-    top: 400px;
-}
+    left: 50%;
+    margin-left: -140px;}
 
 #Slusho {
     left: 10px;
