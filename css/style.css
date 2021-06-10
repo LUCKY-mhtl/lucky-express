@@ -34,6 +34,10 @@ html, body {font-family: 'Luckiest Guy', 'Noto Sans KR', sans-serif !important; 
     padding: 7vw 7vw;
 }
 
+.contents {
+    text-decoration: none;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -271,6 +275,7 @@ section {
     position: relative;
     text-decoration: none;
     width: 120px;
+    padding-top: 10px;
 }
 
 
