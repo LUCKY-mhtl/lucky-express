@@ -12,7 +12,7 @@ html, body {font-family: 'Luckiest Guy', 'Noto Sans KR', sans-serif !important; 
 
 .header {
     position: fixed;
-    z-index: 999;
+    z-index: 990;
     width: 100vw;
     height: 120px;
     left: 0;
@@ -40,6 +40,7 @@ img {
     z-index: inherit;
 }
 
+
 /* layout */
 #layout {
     position: fixed;
@@ -47,11 +48,58 @@ img {
     bottom: 10px;
     right: 10px;
     width: 50vw;
-    height: 120px;
+    height: 50vw;
+    border: 1px solid #000;
+    background: #fff;
+}
+
+.layout-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.layout-scroller {
+    position: absolute;
+    top: 0;
+    left: 0;
     border: 1px solid #000;
 }
 
 /* 메인 */
+
+.popup {
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    padding-top: 300px;
+}
+
+.popup-icon {
+    display: block;
+    text-align: center;
+    font-size: 140px;
+    text-shadow: 2px 2px 6px #fff;
+    position: relative;
+}
+
+.popup-text {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.popup-text span {
+    font-size: 16pt;
+    -webkit-text-fill-color: #FFE600;
+    -webkit-text-stroke: 0.8px #000000;
+    line-height: 1.2;
+    font-family: Helvetica, sans-serif;
+    font-weight: 700;
+    word-break: keep-all;
+}
+
 .main-title {
     margin-top: 140px;
     position: absolute;
@@ -170,27 +218,27 @@ section {
 
 #Pizza-Planet {
     left: 100px;
-    top: 350px;
+    top: 320px;
 }
 
 #Teriyaki {
-    left: 350px;
-    top: 900px;
+    left: 150px;
+    top: 950px;
 }
 
 #Kahuna {
     left: 300px;
-    top: 600px;
+    top: 640px;
 }
 
 #Slusho {
-    left: 600px;
+    left: 940px;
     top: 300px;
 }
 
 #BigJerry {
     left: 40px;
-    top: 650px;
+    top: 690px;
 }
 
 #LosPollos {
@@ -199,20 +247,32 @@ section {
 }
 
 #Clone {
-    left: 800px;
-    top: 500px;
+    left: 900px;
+    top: 920px;
 }
 
 #Clucks {
-    left: 600px;
-    top: 850px;
+    left: 500px;
+    top: 880px;
+}
+
+#Schrader {
+    left: 460px;
+    top: 380px;
+}
+
+#Bennys {
+    left: 820px;
+    top: 600px;
 }
 
 .info-btn {
     cursor: pointer;
     position: relative;
+    text-decoration: none;
     width: 120px;
 }
+
 
 .info-btn span{
     font-size: 12px;
@@ -250,42 +310,103 @@ section {
 
 #AirO {
     left: 50px;
-    top: 100px;
+    top: 150px;
 }
 
 #Duff {
-    left: 800px;
-    top: 300px;
-}
-
-#Encom {
-    left: 400px;
-    top: 50px;
-}
-
-#BnL {
-    left: 300px;
-    top: 300px;
-}
-
-#Oceanic {
-    left: 80px;
-    top: 300px;
-}
-
-#Maroon {
-    left: 150px;
-    top: 600px;
-}
-
-#Specta {
-    left: 300px;
+    left: 900px;
     top: 800px;
 }
 
+#Ingen {
+    left: 60px;
+    top: 550px;
+}
+
+#Encom {
+    left: 420px;
+    top: 100px;
+}
+
+#BnL {
+    left: 420px;
+    top: 320px;
+}
+
+#Oceanic {
+    left: 120px;
+    top: 340px;
+}
+
+#Maroon {
+    left: 760px;
+    top: 340px;
+}
+
+#Specta {
+    left: 240px;
+    top: 770px;
+}
+
+#Lotto {
+    left: 50px;
+    top: 900px;
+}
+
+#BigBelly {
+    left: 540px;
+    top: 880px;
+}
+
+#verybig {
+    left: 1000px;
+    top: 100px;
+}
+
+#initech {
+    left: 1000px;
+    top: 1000px;
+}
+
+#UAC {
+    left: 700px;
+    top: 150px;
+}
+
+#ajira {
+    left: 500px;
+    top: 580px;
+}
+
+#Athl {
+    left: 940px;
+    top: 600px;
+}
+
+#BurgerMatic {
+    left: 300px;
+    top: 1000px;
+}
+
+
 .greenbox {
     width: 160px;
-    border: solid 8px #33EB45;
+    border: solid #33EB45;
+    border-top-width: 8px;
+    border-bottom-width: 3px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    background: #33EB45;
+}
+
+.greenbox-big {
+    width: 300px;
+    border: solid #33EB45;
+    border-top-width: 8px;
+    border-bottom-width: 3px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    background: #33EB45;
 }
 
 .title-greenbox span{
@@ -293,32 +414,148 @@ section {
 }
 
 #Redapple {
-    position: absolute;
-    left: 300px;
-    top: 1750px;
+    left: 500px;
+    top: 200px;
 }
 
 #Baba {
-    position: absolute;
-    left: 10px;
-    top: 2000px;
+    left: 50px;
+    top: 360px;
 }
 
 #CentralP {
-    position: absolute;
-    left: 50px;
-    top: 1700px;
+    left: 100px;
+    top: 100px;
+}
+
+#Dinoco {
+    left: 300px;
+    top: 500px;
+}
+
+#PiedP {
+    left: 880px;
+    top: 640px;
+}
+
+#Capitol {
+    left: 200px;
+    top: 1000px;
+}
+
+#Gusteau {
+    left: 470px;
+    top: 740px;
+}
+
+#jackrabbit {
+    left: 760px;
+    top: 100px;
+}
+
+#eggman {
+    left: 720px;
+    top: 450px;
+}
+
+#chango {
+    left: 900px;
+    top: 900px;
+}
+
+#shreck {
+    left: 70px;
+    top: 720px;
 }
 
 .pinkbox {
     width: 160px;
-    border: solid 8px #FFC3E4;
+    border: solid #FFC3E4;
+    border-top-width: 8px;
+    border-bottom-width: 3px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    background: #FFC3E4;
+}
+
+.pinkbox-big {
+    width: 300px;
+    border: solid #FFC3E4;
+    border-top-width: 8px;
+    border-bottom-width: 3px;
+    border-left-width: 8px;
+    border-right-width: 8px;
+    background: #FFC3E4;
 }
 
 .title-pinkbox span{
     background-color: #FFC3E4;
 }
 
+#Apollo {
+    left: 60px;
+    top: 60px;
+}
+
+#Acme {
+    left: 100px;
+    top: 780px;
+}
+
+#Dunder {
+    left: 500px;
+    top: 350px;
+}
+
+#Brawndo {
+    left: 560px;
+    top: 150px;
+}
+
+#SCDP {
+    left: 800px;
+    top: 100px;
+}
+
+#Lets {
+    left: 60px;
+    top: 460px;
+}
+
+#OCP {
+    left: 640px;
+    top: 690px;
+}
+
+#MassiveD {
+    left: 360px;
+    top: 720px;
+}
+
+#Heisler {
+    left: 990px;
+    top: 620px;
+}
+
+#Wayne {
+    left: 300px;
+    top: 970px;
+}
+
+#Weyland {
+    left: 920px;
+    top: 400px;
+}
+
+#Quinkies {
+    left: 800px;
+    top: 950px;
+}
+
+#Silver {
+    left: 270px;
+    top: 240px;
+}
 
 @media screen and (min-width:426px) {
     html,

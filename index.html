@@ -26,7 +26,7 @@
                 <span>🏠</span>
                 </a>
 
-                <a class="nav-list" href="list.html">
+                <a class="nav-list" href="List.html">
                 <span>📇</span>
                 </a>
 
@@ -36,13 +36,27 @@
             </nav>
         </div>
 
-        <div id="layout"></div>
+        <div id="layout">
+            <div class="layout-inner">
+                <div class="layout-scroller"></div>
+            </div>
+        </div>
         
         <div class="viewer">
             <div class="viewer-inner">
                 <!-- D:: 노란 박스 -->
                 <section class="space-1">
                     <div class="section-inner">
+
+                        <!-- <div class="popup">
+                            <div class="popup-icon">🙀</div>
+                            <div class="popup-text en">
+                                <span>*Allert* <br>This website can contain spoilers.
+                                Read at your own risk.</span></div>
+                                <br>
+                            <div class="popup-text kr">
+                                <span>*주의* 웹페이지에 스포일러가 포함되어 있습니다.</span></div>
+                        </div> -->
 
                         <div class="main-title">
                             <span>LOGO EXPRESS</span>
@@ -61,7 +75,11 @@
                                 <div class="title title-yellowbox"><span>Teriyaki Donut</span></div>
                                 <img alt="Teriyaki" src="img/Teriyaki.png">
                             </div>
-                            <div class="info-btn"><span>More Info.</span></div>
+                            <div class="info-btn">
+                                <a class="contents-teriyaki" href="Teriyaki.html">
+                                    <span>More Info.</span>
+                                </a>
+                            </div>
                         </div>
     
                         <div class="viewer-item" id="Kahuna">
@@ -111,15 +129,31 @@
                             </div>
                             <div class="info-btn"><span>More Info.</span></div>
                         </div>
+
+                        <div class="viewer-item" id="Schrader">
+                            <div class="box yellowbox-big">
+                                <div class="title title-yellowbox"><span>Schraderbrau</span></div>
+                                <div class="img-box"><img alt="Schrader" src="img/Schraderbrau_logo 사본.jpg"></div>
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Bennys">
+                            <div class="box yellowbox-big">
+                                <div class="title title-yellowbox"><span>Benny's World Of Liquor</span></div>
+                                <div class="img-box"><img alt="Bennys" src="img/bennys.png"></div>
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
                     </div>
                 </section>
                 <!-- D:: 파랑 박스 -->
                 <section class="space-2">
                     <div class="section-inner">
                         <div class="viewer-item" id="Duff">
-                            <div class="box bluebox-big">
+                            <div class="box bluebox">
                                 <div class="title title-bluebox"><span>Duff Beer</span></div>
-                                <img alt="Duff" src="img/duffbeer.png">
+                                <img alt="Duff" src="img/Duff.png">
                             </div>
                             <div class="info-btn"><span>More Info.</span></div>
                         </div>
@@ -135,7 +169,7 @@
                         <div class="viewer-item" id="Encom">
                             <div class="box bluebox">
                                 <div class="title title-bluebox"><span>ENCOM</span></div>
-                                <img alt="Encom" src="img/ENCOM.jpeg">
+                                <img alt="Encom" src="img/ENCOM.png">
                             </div>
                             <div class="info-btn"><span>More Info.</span></div>
                         </div>
@@ -151,7 +185,7 @@
                         <div class="viewer-item" id="Oceanic">
                             <div class="box bluebox">
                                 <div class="title title-bluebox"><span>Oceanic Airlines</span></div>
-                                <img alt="Oceanic" src="img/Oceanic.gif">
+                                <img alt="Oceanic" src="img/Oceanic.png">
                             </div>
                             <div class="info-btn"><span>More Info.</span></div>
                         </div>
@@ -165,9 +199,81 @@
                         </div>
 
                         <div class="viewer-item" id="Specta">
-                            <div class="box bluebox-big">
+                            <div class="box bluebox">
                                 <div class="title title-bluebox"><span>Spectacular Optical</span></div>
-                                <img alt="Specta" src="img/specta.jpeg">
+                                <img alt="Specta" src="img/spectacular_optical_logo.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Lotto">
+                            <div class="box bluebox">
+                                <div class="title title-bluebox"><span>MEGA LOTTO JACKPOT</span></div>
+                                <img alt="Lotto" src="img/Megalotto.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="BigBelly">
+                            <div class="box bluebox-big">
+                                <div class="title title-bluebox"><span>BIG BELLY BURGER</span></div>
+                                <img alt="BigBelly" src="img/bigbellyburger_arkham.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="verybig">
+                            <div class="box bluebox">
+                                <div class="title title-bluebox"><span>THE VERY BIG CORPORATION OF AMERICA</span></div>
+                                <img alt="verybig" src="img/TVBCOA_logo.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Ingen">
+                            <div class="box bluebox-big">
+                                <div class="title title-bluebox"><span>iNGen</span></div>
+                                <img alt="Ingen" src="img/ingen_company2.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="initech">
+                            <div class="box bluebox">
+                                <div class="title title-bluebox"><span>INITECH</span></div>
+                                <img alt="initech" src="img/intech_logo.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="UAC">
+                            <div class="box bluebox">
+                                <div class="title title-bluebox"><span>UNION AEROSPACE</span></div>
+                                <img alt="UAC" src="img/UAC_insignia.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="ajira">
+                            <div class="box bluebox-big">
+                                <div class="title title-bluebox"><span>Ajira Airways</span></div>
+                                <img alt="ajira" src="img/ajira_airways.gif">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Athl">
+                            <div class="box bluebox">
+                                <div class="title title-bluebox"><span>ATHLEAD</span></div>
+                                <img alt="Athl" src="img/Athlead.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="BurgerMatic">
+                            <div class="box bluebox">
+                                <div class="title title-bluebox"><span>Burger Matic</span></div>
+                                <img alt="BurgerMatic" src="img/BurgerMatic_logo.jpeg">
                             </div>
                             <div class="info-btn"><span>More Info.</span></div>
                         </div>
@@ -186,11 +292,15 @@
                         </div>
     
                         <div class="viewer-item" id="CentralP">
-                            <div class="box greenbox">
+                            <div class="box greenbox-big">
                                 <div class="title title-greenbox"><span>Central Perk</span></div>
-                                <img alt="CentralP" src="img/centralperk.jpg">
+                                <img alt="CentralP" src="img/Central_Perk.jpeg">
                             </div>
-                            <div class="info-btn"><span>More Info.</span></div>
+                            <div class="info-btn">
+                                <a class="contents-CentralP" href="CentralP.html">
+                                    <span>More Info.</span>
+                                </a>
+                            </div>
                         </div>
     
                         <div class="viewer-item" id="Baba">
@@ -200,13 +310,77 @@
                             </div>
                             <div class="info-btn"><span>More Info.</span></div>
                         </div>
+
+                        <div class="viewer-item" id="Dinoco">
+                            <div class="box greenbox-big">
+                                <div class="title title-greenbox"><span>Dinoco</span></div>
+                                <img alt="Dinoco" src="img/Dinoco_Station.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="PiedP">
+                            <div class="box greenbox">
+                                <div class="title title-greenbox"><span>Pied Piper</span></div>
+                                <img alt="PiedP" src="img/piedpiper_logo.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Capitol">
+                            <div class="box greenbox-big">
+                                <div class="title title-greenbox"><span>Capitol W Lights</span></div>
+                                <img alt="Capitol" src="img/CapitolWLights_DeathProof_02.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Gusteau">
+                            <div class="box greenbox-big">
+                                <div class="title title-greenbox"><span>Gusteau's Restaurant</span></div>
+                                <img alt="Gusteau" src="img/gusteaus_sign.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="eggman">
+                            <div class="box greenbox">
+                                <div class="title title-greenbox"><span>Eggman Movers</span></div>
+                                <img alt="eggman" src="img/eggman_movers_logo.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="jackrabbit">
+                            <div class="box greenbox-big">
+                                <div class="title title-greenbox"><span>Jack Rabbit Slim's</span></div>
+                                <img alt="jackrabbit" src="img/Jack_Rabbit_Slim's.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="chango">
+                            <div class="box greenbox">
+                                <div class="title title-greenbox"><span>CERVEZA CHANGO</span></div>
+                                <img alt="chango" src="img/CervezaChango_logo.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="shreck">
+                            <div class="box greenbox">
+                                <div class="title title-greenbox"><span>Shreck's Department Store</span></div>
+                                <img alt="shreck" src="img/sherecks.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
                     </div>
                 </section>
                 <!-- D:: 핑크 박스 -->
                 <section class="space-4">
                     <div class="section-inner">
                         <div class="viewer-item" id="Apollo">
-                            <div class="box pinkbox">
+                            <div class="box pinkbox-big">
                                 <div class="title title-pinkbox"><span>Apollo</span></div>
                                 <img alt="Apollo" src="img/apollo.png">
                             </div>
@@ -220,6 +394,95 @@
                             </div>
                             <div class="info-btn"><span>More Info.</span></div>
                         </div>
+
+                        <div class="viewer-item" id="Dunder">
+                            <div class="box pinkbox-big">
+                                <div class="title title-pinkbox"><span>Dunder Mifflin Inc.</span></div>
+                                <img alt="Dunder" src="img/dundermifflin.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Brawndo">
+                            <div class="box pinkbox">
+                                <div class="title title-pinkbox"><span>BRAWNDO</span></div>
+                                <img alt="Brawndo" src="img/Brawndo.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="SCDP">
+                            <div class="box pinkbox-big">
+                                <div class="title title-pinkbox"><span>SCDP</span></div>
+                                <img alt="SCDP" src="img/Scdp.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Lets">
+                            <div class="box pinkbox-big">
+                                <div class="title title-pinkbox"><span>Let's Potato Chips</span></div>
+                                <img alt="Lets" src="img/lets_potato2.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="OCP">
+                            <div class="box pinkbox-big">
+                                <div class="title title-pinkbox"><span>OMNI CONSUMER PRODUCTS</span></div>
+                                <img alt="OCP" src="img/OCP_Main.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="MassiveD">
+                            <div class="box pinkbox">
+                                <div class="title title-pinkbox"><span>Massive Dynamic</span></div>
+                                <img alt="MassiveD" src="img/MassiveDynamic.jpg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Heisler">
+                            <div class="box pinkbox">
+                                <div class="title title-pinkbox"><span>Heisler Gold Ale</span></div>
+                                <img alt="Heisler" src="img/Heisler_logo.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Wayne">
+                            <div class="box pinkbox-big">
+                                <div class="title title-pinkbox"><span>Wayne Enterprises</span></div>
+                                <img alt="Wayne" src="img/wayne.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Weyland">
+                            <div class="box pinkbox">
+                                <div class="title title-pinkbox"><span>Weyland Yutani Corp.</span></div>
+                                <img alt="Weyland" src="img/Weyland-Yutani_Coporation_Logo-1-.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Quinkies">
+                            <div class="box pinkbox-big">
+                                <div class="title title-pinkbox"><span>Quinkies</span></div>
+                                <img alt="Quinkies" src="img/Quinkies-WD2_interior2.jpeg">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
+                        <div class="viewer-item" id="Silver">
+                            <div class="box pinkbox">
+                                <div class="title title-pinkbox"><span>Silver Shamrock Novelties</span></div>
+                                <img alt="Silver" src="img/SilverShamrock.png">
+                            </div>
+                            <div class="info-btn"><span>More Info.</span></div>
+                        </div>
+
                     </div>
                 </section>
             </div>
